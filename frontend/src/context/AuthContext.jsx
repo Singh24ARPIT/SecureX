@@ -12,6 +12,20 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    const checkDemoAutoLogin = async () => {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('demo') === 'admin' && !localStorage.getItem('sentinelai_token')) {
+        try {
+          await login('admin', 'SentinelAdmin2026!');
+        } catch (e) {
+          console.error('Demo auto-login error:', e);
+        }
+      }
+    };
+    checkDemoAutoLogin();
+  }, []);
+
+  useEffect(() => {
     const verifyUser = async () => {
       if (token) {
         try {

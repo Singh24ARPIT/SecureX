@@ -103,3 +103,4 @@ class ChangeDetectionAgent:
             "changes": changes_detected,
             "testing_trigger_recommended": len(changes_detected) > 0
         }
+

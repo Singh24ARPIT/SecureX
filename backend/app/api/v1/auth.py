@@ -77,3 +77,4 @@ def list_users(
     current_user: User = Depends(require_permission("users:manage"))
 ):
     return db.query(User).all()
+

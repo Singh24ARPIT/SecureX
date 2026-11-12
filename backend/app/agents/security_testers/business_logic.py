@@ -152,3 +152,4 @@ class BusinessLogicTestingAgent:
                     "response_dump": f"HTTP/1.1 409 Conflict\n\n{exc.detail}"
                 }
             return {"vulnerable": False, "title": f"HTTP {exc.status_code}", "reason": str(exc.detail)}
+

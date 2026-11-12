@@ -50,3 +50,4 @@ class ScanResponse(BaseModel):
 class ScanDetailResponse(ScanResponse):
     agent_logs: List[AgentLogResponse] = []
     config_json: Optional[Dict[str, Any]] = None
+

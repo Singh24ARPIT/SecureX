@@ -119,3 +119,4 @@ def seed_database(db: Session):
             status="confirmed"
         ))
         db.commit()
+

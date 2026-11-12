@@ -115,3 +115,4 @@ def get_scan_agent_logs(
     return db.query(AgentExecutionLog).filter(
         AgentExecutionLog.scan_id == scan_id
     ).order_by(AgentExecutionLog.created_at.asc()).all()
+

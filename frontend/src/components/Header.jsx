@@ -89,3 +89,4 @@ export const Header = ({ onScanTriggered }) => {
     </header>
   );
 };
+

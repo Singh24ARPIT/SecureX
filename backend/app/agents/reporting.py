@@ -77,3 +77,4 @@ class ReportingAgent:
             row = {k: item.get(k, "") for k in fieldnames}
             writer.writerow(row)
         return output.getvalue()
+

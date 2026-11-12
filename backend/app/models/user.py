@@ -28,3 +28,4 @@ class User(Base):
 
     # Relationships
     audit_logs = relationship("AuditLog", back_populates="user")
+

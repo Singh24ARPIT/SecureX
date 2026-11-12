@@ -128,3 +128,4 @@ def get_vulnerability_trends(
         false_positive_rate=fp_rate,
         remediation_rate=remediation_rate
     )
+

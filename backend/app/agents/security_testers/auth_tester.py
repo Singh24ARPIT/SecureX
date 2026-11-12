@@ -39,3 +39,4 @@ class AuthenticationTestingAgent:
             "title": "Authentication Enforced",
             "reason": "Endpoint correctly mandates authentication headers."
         }
+

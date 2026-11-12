@@ -27,3 +27,4 @@ class InjectionTestingAgent:
             "request_dump": f"POST {ep.path} HTTP/1.1\nContent-Type: application/json\n\n{{\"room_count\": \"invalid_str\"}}",
             "response_dump": "HTTP/1.1 422 Unprocessable Entity\n\n{\"detail\": [{\"loc\": [\"body\", \"room_count\"], \"msg\": \"Input should be a valid integer\"}]}"
         }
+

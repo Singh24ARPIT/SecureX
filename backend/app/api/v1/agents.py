@@ -132,3 +132,4 @@ def get_all_agent_logs(
     return db.query(AgentExecutionLog).order_by(
         AgentExecutionLog.created_at.desc()
     ).limit(limit).all()
+

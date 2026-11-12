@@ -100,3 +100,4 @@ class RiskAssessmentAgent:
             "booking_payment_impact": booking_payment_impact,
             "rationale": rationale
         }
+

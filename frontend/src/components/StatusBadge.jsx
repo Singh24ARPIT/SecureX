@@ -45,3 +45,4 @@ export const MethodBadge = ({ method }) => {
     </span>
   );
 };
+

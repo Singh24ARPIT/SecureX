@@ -30,3 +30,4 @@ class TargetResponse(TargetBase):
 
     class Config:
         from_attributes = True
+

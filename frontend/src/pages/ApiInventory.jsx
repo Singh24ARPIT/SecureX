@@ -191,3 +191,4 @@ export const ApiInventory = () => {
     </div>
   );
 };
+

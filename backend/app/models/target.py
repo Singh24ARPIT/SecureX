@@ -22,3 +22,4 @@ class AuthorizedTarget(Base):
     endpoints = relationship("ApiEndpoint", back_populates="target", cascade="all, delete-orphan")
     scans = relationship("SecurityScan", back_populates="target", cascade="all, delete-orphan")
     deployment_events = relationship("DeploymentEvent", back_populates="target", cascade="all, delete-orphan")
+

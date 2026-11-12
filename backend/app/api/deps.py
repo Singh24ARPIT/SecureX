@@ -78,3 +78,4 @@ def record_audit(
         db.commit()
     except Exception:
         db.rollback()
+

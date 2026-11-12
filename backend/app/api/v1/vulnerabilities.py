@@ -120,3 +120,4 @@ def retest_vulnerability(
     
     record_audit(db, current_user.id, "vuln:retest", "vulnerability", str(vuln_id), result)
     return result
+

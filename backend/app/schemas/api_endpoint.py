@@ -74,3 +74,4 @@ class DeploymentEventResponse(BaseModel):
 
     class Config:
         from_attributes = True
+

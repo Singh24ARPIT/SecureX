@@ -35,3 +35,4 @@ def get_audit_trail(
     if resource_type:
         query = query.filter(AuditLog.resource_type == resource_type)
     return query.order_by(AuditLog.timestamp.desc()).limit(limit).all()
+

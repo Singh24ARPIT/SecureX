@@ -191,3 +191,4 @@ class MultiAgentOrchestrator:
             "findings_count": findings_created,
             "scan_duration_sec": (scan.end_time - scan.start_time).total_seconds()
         }
+

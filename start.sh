@@ -40,3 +40,4 @@ echo "Press Ctrl+C to terminate services."
 echo "======================================================="
 
 wait
+

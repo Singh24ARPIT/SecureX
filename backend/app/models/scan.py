@@ -43,3 +43,4 @@ class AgentExecutionLog(Base):
     created_at = Column(DateTime, default=datetime.utcnow)
 
     scan = relationship("SecurityScan", back_populates="agent_logs")
+

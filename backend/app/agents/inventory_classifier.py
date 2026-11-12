@@ -54,3 +54,4 @@ class ApiInventoryAgent:
                 for ep in zombie_list + shadow_list
             ]
         }
+

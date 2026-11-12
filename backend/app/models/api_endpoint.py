@@ -77,3 +77,4 @@ class DeploymentEvent(Base):
     created_at = Column(DateTime, default=datetime.utcnow)
 
     target = relationship("AuthorizedTarget", back_populates="deployment_events")
+

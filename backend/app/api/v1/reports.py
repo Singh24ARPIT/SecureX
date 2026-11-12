@@ -39,3 +39,4 @@ def export_json_report(
     report_data = agent.generate_report_data()
     record_audit(db, current_user.id, "report:export_json", "report")
     return report_data
+

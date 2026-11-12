@@ -50,3 +50,4 @@ class SafetyPolicyAgent:
         ]
         sanitized = [cat for cat in requested_categories if cat in safe_allowed]
         return sanitized
+

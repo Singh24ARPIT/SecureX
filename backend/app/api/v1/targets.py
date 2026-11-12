@@ -88,3 +88,4 @@ def delete_target(
     db.commit()
     record_audit(db, current_user.id, "target:delete", "target", str(target_id), {"name": target.name})
     return {"message": f"Target '{target.name}' deleted successfully"}
+

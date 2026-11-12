@@ -77,3 +77,4 @@ def update_endpoint_classification(
     
     record_audit(db, current_user.id, "inventory:reclassify_endpoint", "endpoint", str(ep.id), {"from": old_class, "to": ep.classification})
     return ep
+

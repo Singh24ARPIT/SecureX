@@ -102,3 +102,4 @@ def get_deployment_history(
     if target_id:
         query = query.filter(DeploymentEvent.target_id == target_id)
     return query.order_by(DeploymentEvent.created_at.desc()).limit(20).all()
+

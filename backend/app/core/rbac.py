@@ -42,3 +42,4 @@ ROLE_PERMISSIONS = {
 def check_permission(user_role: str, required_permission: str) -> bool:
     perms = ROLE_PERMISSIONS.get(user_role, [])
     return required_permission in perms
+

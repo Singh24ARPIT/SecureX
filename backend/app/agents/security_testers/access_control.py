@@ -76,3 +76,4 @@ class AccessControlTestingAgent:
                 "title": f"HTTP {exc.status_code}",
                 "reason": str(exc.detail)
             }
+

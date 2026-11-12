@@ -27,3 +27,4 @@ class VulnerabilityTrendsResponse(BaseModel):
     by_severity: Dict[str, int]
     false_positive_rate: float
     remediation_rate: float
+

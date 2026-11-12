@@ -11,7 +11,7 @@ client = TestClient(app)
 
 def test_full_dast_pipeline():
     print("\n=======================================================")
-    print("SENTINELAI / SECUREX END-TO-END DAST PIPELINE TEST")
+    print("SECUREX END-TO-END DAST PIPELINE TEST")
     print("=======================================================")
 
     # 1. Health check
@@ -22,7 +22,7 @@ def test_full_dast_pipeline():
     # 2. Authentication
     res = client.post("/api/v1/auth/login", json={
         "username": "admin",
-        "password": "SentinelAdmin2026!"
+        "password": "SecuReXAdmin2026!"
     })
     assert res.status_code == 200, res.text
     token = res.json()["access_token"]
@@ -98,7 +98,7 @@ def test_full_dast_pipeline():
     # 9. Report Export (Agent 9)
     csv_res = client.get("/api/v1/reports/export/csv", headers=headers)
     assert csv_res.status_code == 200
-    assert "SentinelAI" in csv_res.text or "title" in csv_res.text
+    assert "SecuReX" in csv_res.text or "title" in csv_res.text
     print("✓ Agent 9 CSV Security Report Generated successfully.")
 
     print("\n=======================================================")

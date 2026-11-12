@@ -81,7 +81,7 @@ export const Reports = () => {
               {report?.title || 'Security Assessment Report'}
             </h3>
             <p className="text-xs text-slate-400 font-mono mt-0.5">
-              Platform: {report?.platform || 'SentinelAI DAST Engine'}
+              Platform: {report?.platform || 'SecuReX DAST Engine'}
             </p>
           </div>
 

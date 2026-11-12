@@ -23,7 +23,7 @@ const ProtectedLayout = () => {
       <div className="min-h-screen bg-[#070a12] flex items-center justify-center text-cyan-400 font-mono text-xs">
         <div className="flex items-center gap-2">
           <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping" />
-          <span>AUTHENTICATING SENTINEL-AI ENCLAVE...</span>
+          <span>AUTHENTICATING SECUREX ENCLAVE...</span>
         </div>
       </div>
     );

@@ -19,7 +19,7 @@ class ReconDiscoveryAgent:
             raise ValueError(f"Target ID {target_id} not found")
 
         # In production, this agent crawls OpenAPI schemas / docs or analyzes staging traffic.
-        # For SentinelAI, we discover all defined staging travel endpoints:
+        # For SecuReX, we discover all defined staging travel endpoints:
         known_discovery_catalog = [
             {
                 "path": "/api/v1/staging/hotels/search",

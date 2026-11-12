@@ -81,7 +81,7 @@ export const Dashboard = () => {
             </span>
           </div>
           <h2 className="text-2xl font-bold text-white tracking-tight">
-            SentinelAI Autonomous Real-Time DAST
+            SecuReX Autonomous Real-Time DAST
           </h2>
           <p className="text-sm text-slate-400 mt-1 max-w-2xl">
             Autonomous multi-agent orchestration for dynamic API change detection, deep business logic testing, cross-agency IDOR analysis, and deterministic retesting.

@@ -20,7 +20,7 @@ from app.agents.reporting import ReportingAgent
 
 class MultiAgentOrchestrator:
     """
-    Coordinates the 10-agent dynamic testing pipeline for SentinelAI.
+    Coordinates the 10-agent dynamic testing pipeline for SecuReX.
     Executes sequentially with safety policy bounds, logging each agent's execution.
     """
     def __init__(self, db: Session):

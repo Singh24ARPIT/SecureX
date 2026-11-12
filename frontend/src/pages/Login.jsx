@@ -7,7 +7,7 @@ export const Login = () => {
   const navigate = useNavigate();
   const { login } = useAuth();
   const [username, setUsername] = useState('admin');
-  const [password, setPassword] = useState('SentinelAdmin2026!');
+  const [password, setPassword] = useState('SecuReXAdmin2026!');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -43,7 +43,7 @@ export const Login = () => {
             <ShieldAlert className="w-6 h-6 text-white" />
           </div>
           <h1 className="text-2xl font-bold text-white tracking-tight font-mono">
-            SENTINEL<span className="text-cyan-400">AI</span>
+            Secu<span className="text-cyan-400">ReX</span>
           </h1>
           <p className="text-xs text-slate-400 font-mono mt-1 uppercase tracking-wider">
             Autonomous Real-Time DAST Platform
@@ -112,7 +112,7 @@ export const Login = () => {
           <div className="flex flex-wrap justify-center gap-2">
             <button
               type="button"
-              onClick={() => setPreset('admin', 'SentinelAdmin2026!')}
+              onClick={() => setPreset('admin', 'SecuReXAdmin2026!')}
               className="px-2.5 py-1 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700 text-[11px] font-mono text-cyan-300"
             >
               Admin

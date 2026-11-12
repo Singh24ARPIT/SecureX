@@ -55,7 +55,7 @@ class ReportingAgent:
 
         total = len(vulns)
         return {
-            "title": "SentinelAI Executive Cybersecurity Assessment Report",
+            "title": "SecuReX Executive Cybersecurity Assessment Report",
             "platform": "TBO Voyagehack 4.0 Security Scanner",
             "total_findings": total,
             "severity_breakdown": severity_counts,

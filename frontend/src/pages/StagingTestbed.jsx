@@ -286,7 +286,7 @@ export const StagingTestbed = () => {
               Target Vulnerability & Patch Switchboard
             </h3>
             <p className="text-xs text-slate-400 mt-0.5">
-              Toggle patches on/off in real-time to demonstrate how SentinelAI's Retest Agent detects regressions and validates fixes.
+              Toggle patches on/off in real-time to demonstrate how SecuReX's Retest Agent detects regressions and validates fixes.
             </p>
           </div>
           <button onClick={fetchConfig} className="text-xs text-cyan-400 font-mono hover:underline">

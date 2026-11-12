@@ -3,7 +3,8 @@ __pycache__/
 *.pyc
 *.pyo
 .pytest_cache/
-sentinelai.db
+securex.db
+*.db
 *.sqlite3
 
 frontend/node_modules/

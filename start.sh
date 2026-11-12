@@ -2,7 +2,7 @@
 set -e
 
 echo "======================================================="
-echo "Starting SentinelAI – Autonomous Real-Time DAST Engine"
+echo "Starting SecuReX – Autonomous Real-Time DAST Engine"
 echo "VOYAGEHACK 4.0 | TBO Security Hackathon 2026"
 echo "======================================================="
 
@@ -32,10 +32,10 @@ trap "kill $BACKEND_PID $FRONTEND_PID 2>/dev/null" EXIT
 
 echo ""
 echo "======================================================="
-echo "SentinelAI Platform is LIVE!"
+echo "SecuReX Platform is LIVE!"
 echo "Backend Docs:  http://127.0.0.1:8000/docs"
 echo "Frontend UI:   http://127.0.0.1:5173"
-echo "Default Admin: admin / SentinelAdmin2026!"
+echo "Default Admin: admin / SecuReXAdmin2026!"
 echo "Press Ctrl+C to terminate services."
 echo "======================================================="
 

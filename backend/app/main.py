@@ -32,7 +32,7 @@ app = FastAPI(
     title=settings.PROJECT_NAME,
     version=settings.PROJECT_VERSION,
     description="""
-# SentinelAI / SecureX Backend API
+# SecuReX Backend API
 Autonomous AI-Powered Real-Time Dynamic Application Security Testing (DAST) Platform.
 Built for TBO VOYAGEHACK 4.0.
 
@@ -72,14 +72,14 @@ app.include_router(staging_app.router, prefix=settings.API_V1_STR)
 def health_check():
     return {
         "status": "healthy",
-        "service": "SentinelAI Real-Time DAST Engine",
+        "service": "SecuReX Real-Time DAST Engine",
         "version": settings.PROJECT_VERSION
     }
 
 @app.get("/")
 def root():
     return {
-        "message": "Welcome to SentinelAI - Autonomous Real-Time DAST Platform",
+        "message": "Welcome to SecuReX - Autonomous Real-Time DAST Platform",
         "docs": "/docs",
         "status": "operational"
     }

@@ -21,15 +21,15 @@ def seed_database(db: Session):
     users_data = [
         {
             "username": "admin",
-            "email": "admin@sentinelai.internal",
+            "email": "admin@securex.internal",
             "full_name": "Chief Security Architect",
-            "password": "SentinelAdmin2026!",
+            "password": "SecuReXAdmin2026!",
             "role": "admin",
             "agency_id": None
         },
         {
             "username": "sec_engineer",
-            "email": "engineer@sentinelai.internal",
+            "email": "engineer@securex.internal",
             "full_name": "DevSecOps Lead",
             "password": "SecurityEng2026!",
             "role": "security_engineer",

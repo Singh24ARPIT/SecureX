@@ -3,17 +3,17 @@ from typing import List
 from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
-    PROJECT_NAME: str = "SentinelAI – Autonomous Real-Time DAST Platform"
+    PROJECT_NAME: str = "SecuReX – Autonomous Real-Time DAST Platform"
     PROJECT_VERSION: str = "1.0.0"
     API_V1_STR: str = "/api/v1"
     
     # Security
-    SECRET_KEY: str = os.getenv("SECRET_KEY", "sentinelai-super-secret-key-change-in-production-voyagehack-2026")
+    SECRET_KEY: str = os.getenv("SECRET_KEY", "securex-super-secret-key-change-in-production-voyagehack-2026")
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24 # 24 hours
     
     # Database (Default to SQLite, compatible with PostgreSQL)
-    DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./sentinelai.db")
+    DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./securex.db")
     
     # CORS
     BACKEND_CORS_ORIGINS: List[str] = [

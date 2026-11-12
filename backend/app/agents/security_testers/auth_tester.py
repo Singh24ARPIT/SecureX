@@ -29,7 +29,7 @@ class AuthenticationTestingAgent:
                 "description": f"Endpoint '{ep.path}' allows anonymous callers to query passenger travel reservations and customer PII without any authorization header.",
                 "business_impact": "Mass GDPR / DPDPA regulatory non-compliance penalty, public leak of customer travel records.",
                 "remediation_guidance": "Deprecate legacy API route and place behind API gateway OAuth2/JWT middleware with strict access policies.",
-                "request_dump": f"GET {ep.path} HTTP/1.1\nHost: staging-api.tbo.internal\nUser-Agent: SentinelAI-DAST/1.0",
+                "request_dump": f"GET {ep.path} HTTP/1.1\nHost: staging-api.tbo.internal\nUser-Agent: SecuReX-DAST/1.0",
                 "response_dump": "HTTP/1.1 200 OK\nContent-Type: application/json\n\n{\n  \"count\": 10,\n  \"data\": [{\"customer_email\": \"...\", \"reference\": \"...\"}]\n}",
                 "endpoint_id": endpoint_id
             }

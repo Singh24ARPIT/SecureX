@@ -1,7 +1,7 @@
-# SentinelAI – Autonomous AI-Powered Real-Time DAST Platform
+# SecuReX – Autonomous AI-Powered Real-Time DAST Platform
 ### VOYAGEHACK 4.0 | TBO Security Hackathon 2026
 
-**SentinelAI** (SecureX) is a multi-agent cybersecurity platform that continuously monitors API deployments, maps endpoint trees, synthesizes targeted security test vectors, identifies complex business logic flaws (fare manipulation, duplicate refunds, cross-agency IDOR), eliminates false positives with deterministic proof verification, and provides closed-loop regression retesting.
+**SecuReX** is a multi-agent cybersecurity platform that continuously monitors API deployments, maps endpoint trees, synthesizes targeted security test vectors, identifies complex business logic flaws (fare manipulation, duplicate refunds, cross-agency IDOR), eliminates false positives with deterministic proof verification, and provides closed-loop regression retesting.
 
 ---
 
@@ -26,7 +26,7 @@ The system coordinates **10 Autonomous Agents**:
 
 ## 2. Business Logic & Complex Travel Vulnerabilities Detected
 
-Conventional scanners miss application-specific logic flaws. SentinelAI specifically detects:
+Conventional scanners miss application-specific logic flaws. SecuReX specifically detects:
 1. **Cross-Agency IDOR / BOLA**: Travel Agency 202 accessing bookings and customer itineraries belonging to Agency 101 via parameter reference tampering.
 2. **Client-Side Fare Manipulation**: Booking accommodations by submitting manipulated prices ($1.00) rather than server-calculated tariff amounts.
 3. **Duplicate Refund Workflow Abuse**: Submitting multiple cancellation refund requests on a single settled booking reference without idempotency locks.
@@ -92,7 +92,7 @@ npm run dev
 - **Interactive API Swagger Docs**: [http://localhost:8000/docs](http://localhost:8000/docs)
 
 ### Pre-Seeded Hackathon Accounts
-- **Chief Security Architect**: `admin` / `SentinelAdmin2026!`
+- **Chief Security Architect**: `admin` / `SecuReXAdmin2026!`
 - **Security Engineer**: `sec_engineer` / `SecurityEng2026!`
 - **Travel Agency 101 User**: `agency1_user` / `AgencyPass2026!`
 - **Travel Agency 202 User**: `agency2_user` / `AgencyPass2026!`

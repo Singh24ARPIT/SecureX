@@ -27,7 +27,7 @@ def export_csv_report(
     return Response(
         content=csv_data,
         media_type="text/csv",
-        headers={"Content-Disposition": "attachment; filename=sentinelai_security_report.csv"}
+        headers={"Content-Disposition": "attachment; filename=securex_security_report.csv"}
     )
 
 @router.get("/export/json")

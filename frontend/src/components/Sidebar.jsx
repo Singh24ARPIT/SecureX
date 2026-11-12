@@ -37,7 +37,7 @@ export const Sidebar = () => {
         </div>
         <div>
           <h1 className="font-bold text-base text-white tracking-wide font-mono flex items-center gap-1.5">
-            SENTINEL<span className="text-cyan-400">AI</span>
+            Secu<span className="text-cyan-400">ReX</span>
           </h1>
           <p className="text-[10px] text-cyan-400 font-mono tracking-wider uppercase">DAST Multi-Agent Platform</p>
         </div>

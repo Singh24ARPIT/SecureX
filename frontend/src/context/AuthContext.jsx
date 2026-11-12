@@ -5,18 +5,18 @@ const AuthContext = createContext(null);
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(() => {
-    const saved = localStorage.getItem('sentinelai_user');
+    const saved = localStorage.getItem('securex_user');
     return saved ? JSON.parse(saved) : null;
   });
-  const [token, setToken] = useState(() => localStorage.getItem('sentinelai_token'));
+  const [token, setToken] = useState(() => localStorage.getItem('securex_token'));
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const checkDemoAutoLogin = async () => {
       const params = new URLSearchParams(window.location.search);
-      if (params.get('demo') === 'admin' && !localStorage.getItem('sentinelai_token')) {
+      if (params.get('demo') === 'admin' && !localStorage.getItem('securex_token')) {
         try {
-          await login('admin', 'SentinelAdmin2026!');
+          await login('admin', 'SecuReXAdmin2026!');
         } catch (e) {
           console.error('Demo auto-login error:', e);
         }
@@ -31,7 +31,7 @@ export const AuthProvider = ({ children }) => {
         try {
           const res = await api.get('/auth/me');
           setUser(res.data);
-          localStorage.setItem('sentinelai_user', JSON.stringify(res.data));
+          localStorage.setItem('securex_user', JSON.stringify(res.data));
         } catch (err) {
           logout();
         }
@@ -44,16 +44,16 @@ export const AuthProvider = ({ children }) => {
   const login = async (username, password) => {
     const res = await api.post('/auth/login', { username, password });
     const { access_token, user: loggedUser } = res.data;
-    localStorage.setItem('sentinelai_token', access_token);
-    localStorage.setItem('sentinelai_user', JSON.stringify(loggedUser));
+    localStorage.setItem('securex_token', access_token);
+    localStorage.setItem('securex_user', JSON.stringify(loggedUser));
     setToken(access_token);
     setUser(loggedUser);
     return loggedUser;
   };
 
   const logout = () => {
-    localStorage.removeItem('sentinelai_token');
-    localStorage.removeItem('sentinelai_user');
+    localStorage.removeItem('securex_token');
+    localStorage.removeItem('securex_user');
     setToken(null);
     setUser(null);
   };

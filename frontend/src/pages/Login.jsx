@@ -25,9 +25,19 @@ export const Login = () => {
     }
   };
 
-  const setPreset = (u, p) => {
+  const setPreset = async (u, p) => {
     setUsername(u);
     setPassword(p);
+    setError('');
+    setLoading(true);
+    try {
+      await login(u, p);
+      navigate('/');
+    } catch (err) {
+      setError(err.response?.data?.detail || 'Authentication failed.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -92,6 +102,9 @@ export const Login = () => {
                 className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700/80 text-xs text-slate-100 font-mono focus:outline-none focus:border-cyan-500"
               />
             </div>
+            <p className="text-[10px] text-cyan-400/80 font-mono mt-1">
+              Hint: Password is <span className="text-cyan-300 font-bold">SecuReXAdmin2026!</span> (or simply <span className="text-cyan-300 font-bold">admin</span>)
+            </p>
           </div>
 
           <button
